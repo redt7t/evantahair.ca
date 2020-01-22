@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mobile.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="middle">
+        <h5 class="left">The Stratford Hotel</h5>
+        <li class="right">
+          <div class="button-nav">
+            <a href="../html/contact.html">
+              Contact Us
+            </a>
+          </div>
+        </li>
+        <li class="right"><a href="../html/about.html">About Stratford</a></li>
+        <li class="right"><a href="../html/rooms.html">Rooms</a></li>
+        <li class="right"><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <!-- Slideshow -->
+
+    <!-- Code copied from: https://www.w3schools.com/howto/howto_js_slideshow.asp
+            Author: w3schools.com
+            Name: Slideshow / Carousel
+            Description: Displays an img slideshow/carousel with buttons to navigate.
+            Date retrieved: Nov. 19, 2019 -->
+
+    <!-- Copied code starts -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="../images/Xhotel.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/Xsquare.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/xcityhall.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/Xtheatre.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/xbridge.jpg" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../images/xswans.jpg" style="width:100%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <!-- Copied code ends -->
+
+    <!-- Content -->
+
+    <div class="about-title">
+      <h1>The City of Stratford</h1>
+      <p>
+        Located in the heart of beautiful, picturesque Perth County, Stratford
+        is where old-world charm and character meets the amenities of the modern
+        era.
+      </p>
+    </div>
+
+    <div class="wrapper-about">
+      <div class="row-about middle about-item">
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/history_strat.jpg" />
+        </div>
+        <div class="col-33 text-center">
+          <h3>History of The Stratford Hotel</h3>
+          <p>
+            Our Property was built originally in 1875 as a group of four
+            townhouses. The Daly Terrace Townhouse, as it was known, was erected
+            by the prominent Daly family. Construction was supervised by
+            Stratford's Mayor and Perth federal MP Thomas Mayne Daly. His son,
+            Junior, had many successes including being the first Manitoba MP to
+            sit on the federal cabinet. The property has been home to three past
+            mayors.
+          </p>
+          <p>
+            The Stratford Hotel has the honour to be designated as a heritage
+            building by the Ontario government, and the designation will protect
+            this building for years to come.
+          </p>
+        </div>
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/history_strat_2.jpg" />
+        </div>
+      </div>
+
+      <div class="row-about middle about-item">
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/festival_1.jpg" />
+        </div>
+        <div class="col-33 text-center">
+          <h3>Stratford Festival</h3>
+          <p>
+            The city is well known for being the home of hte Stratford Festival,
+            previously known as the Stratford Shakespeare Festival. While
+            Shakespeare's plays are still produced, plays in a wide range of
+            genres are offered each year, from May to October. Our charming city
+            and Victorian era buildings provide visitors and residents alike
+            with a pleasent atmosphere and many distractions and activities.
+          </p>
+        </div>
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/festival_2.jpg" />
+        </div>
+      </div>
+
+      <div class="row-about middle about-item">
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/swans_2.jpg" />
+        </div>
+        <div class="col-33 text-center">
+          <h3>The City of Swans</h3>
+          <p>
+            The swan has become a symbol of the city. Each year twenty-four
+            white swans are released into the Avon River.
+          </p>
+        </div>
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/swans_1.jpg" />
+        </div>
+      </div>
+
+      <div class="row-about middle about-item">
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/music_2.jpg" />
+        </div>
+        <div class="col-33 text-center">
+          <h3>The Stratford Summer Music Festival</h3>
+          <p>
+            Stratford Summer Music, in ites 17th year, runs for about a month.
+            In 2016 the event, run by the city, offered 85 concerts, a third of
+            them free or "pay what you can". The 2016 budget was $800,000 with
+            funding provided by agencies such as the Ontario Cultural
+            Attractions Fund.
+          </p>
+        </div>
+        <div class="col-33 img-take">
+          <img class="img-responsive" src="../images/music_1.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+
+    <div class="bottom">
+      <h3>Come stay the night!</h3>
+      <a class="button" href="../html/contact.html">Book a room</a>
+    </div>
+
+    <!-- Footer -->
+
+    <section id="footer">
+      <div id="ft1">
+        <h1>The Stratford Hotel</h1>
+        <p>
+          World class dining, fantastic shopping, galleries, beautiful parks,
+          the calming Avon River, and unforgettable Theater all minutes from our
+          front door. Welcome to Stratford.
+        </p>
+        <h3>Privacy Policy | Terms and Conditions</h3>
+      </div>
+
+      <div id="ft2">
+        <div class="footer-col">
+          <a href="../index.html">Home</a>
+          <a href="../html/about.html">About Stratford</a>
+        </div>
+        <div class="footer-col">
+          <a href="../html/rooms.html">Rooms</a>
+          <a href="../html/contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div id="ft3">
+        <a href="https://www.facebook.com/TheStratfordHotel">
+          <img
+            class="footerlogos"
+            src="../images/fblogo.png"
+            alt="A picture of the facebook logo"
+          />
+        </a>
+        <a
+          href="https://www.tripadvisor.ca/Hotel_Review-g155015-d1645482-Reviews-The_Stratford_Hotel-Stratford_Ontario.html"
+        >
+          <img
+            class="footerlogos"
+            src="../images/tripadvisor.png"
+            alt="A picture of the tripadvisor logo"
+          />
+        </a>
+
+        <h2>1-888-250-4007</h2>
+
+        <h2>519-273-3666</h2>
+
+        <h2>info@stratfordhotel.on.ca</h2>
+
+        <h3>
+          Copyright &#x24B8; 2019 Stratford Hotel. <br />
+          All rights reserved. <br />
+          Web Design by GBDA 228
+        </h3>
+      </div>
+    </section>
+  </body>
+</html>

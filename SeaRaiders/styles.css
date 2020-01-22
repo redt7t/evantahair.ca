@@ -1,0 +1,78 @@
+/*canvas*/
+#myCanvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+	border:5px solid #B42615;
+    border-radius: 10px;
+    background-image: url(images/background1.png);
+	touch-action: manipulation;
+    
+}
+
+/*page background*/
+body {
+    background-image: url(images/pagebackground.jpg);
+    touch-action: manipulation;
+    min-width: 550px;
+}
+
+/*header*/
+img {
+    padding: 0;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+
+/*buttons*/
+.controls {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	touch-action: manipulation;
+    max-width: 550px; 
+}
+
+.controls div {
+    display: inline;
+}
+
+.button {
+    display: inline;
+    border:5px solid #B42615;
+    border-radius: 5px;
+    padding: 0.75em 0em;
+    margin-top: 0.25em;
+    width: 160px;
+    background-color: #FF2615;
+    font-family: verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    touch-action: manipulation;
+}
+
+.button:active {
+    background-color: #B42615;
+    border:5px solid #B42615;
+    color: white;
+}
+
+.button-align { 
+    text-align: justify;
+}
+
+.button-align > * {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.button-align::after {
+   content: "";
+   width: 100%;
+   display: inline-block;
+}
+

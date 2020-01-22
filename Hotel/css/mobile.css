@@ -1,0 +1,172 @@
+@media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper-about {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper-contact {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .mobile-nav {
+    width: 100%;
+  }
+
+  .button-nav {
+    margin-left: 1em;
+  }
+
+  .nav h5 {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .col-33 {
+    flex: 100%;
+  }
+
+  .col-50 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  li {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .right {
+    float: left;
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero_content {
+    margin: 0;
+    width: auto;
+    top: 50%;
+    margin: 0 1em;
+  }
+
+  .hero_content h1 {
+    font-size: 20px;
+  }
+
+  .pg1iconscont {
+    max-width: 100%;
+  }
+
+  #google-maps {
+    display: block;
+  }
+
+  .maps {
+    max-width: 100%;
+  }
+
+  .map-content {
+    max-width: 100%;
+    padding: 1em 1em;
+  }
+
+  .guestreviews {
+    display: block;
+    width: 100%;
+  }
+
+  #guest-reviews {
+    display: block;
+  }
+
+  .guest-title {
+    max-width: 100%;
+  }
+
+  .about-item img {
+    display: none;
+  }
+
+  .about-title {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .about-item .img-take {
+    display: none;
+  }
+
+  .book-online-contain {
+    margin: 2em 1em;
+  }
+
+  .book-online-contain h1 {
+    font-size: 20px;
+  }
+
+  .room-info ul {
+    top: 5%;
+  }
+
+  .rooms-hero {
+    padding: 0 1em;
+  }
+
+  .room-filter {
+    padding: 0 1em;
+  }
+
+  .when-mobile {
+    flex: 100%;
+  }
+  .form-outline {
+    margin: 0 1em;
+  }
+
+  #footer {
+    padding: 1em 1em;
+    display: block;
+  }
+
+  #ft1 {
+    width: 50%;
+  }
+  #ft2 {
+    margin: 0;
+    width: 100%;
+  }
+  #ft3 {
+    width: 100%;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-basis: 25%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-col a {
+    margin: 1em 1em;
+  }
+}

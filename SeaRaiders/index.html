@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evan Tahair | Sea Raiders</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <img src="images/Font1.png" width="550">
+
+	<canvas id="myCanvas" width="550" height="650"></canvas>
+    
+    <div class="controls button-align">
+        <div>
+        <button class="button" id="left" type="button"  >Left</button>
+        </div>
+        <div>
+        <button class="button" id="fireCanon" type="button" >Fire</button>
+        </div>
+        <div>
+        <button class="button" id="right" type="button" >Right</button>
+        </div>
+    </div>
+    
+	<!-- The following section loads in the audio files
+	used for sound fx's and music -->
+	
+	<audio id="fire" src="sound/fire.mp3" type="audio/mpeg"></audio>
+	<audio id="hit" src="sound/hit.mp3" type="audio/mpeg"></audio>
+    <audio id="explosion" src="sound/explosion.mp3" type="audio/mpeg"></audio>
+    <audio id="hurt" src="sound/hurt.mp3" type="audio/mpeg"></audio>
+    <audio id="bossSound" src="sound/boss.mp3" type="audio/mpeg"></audio>
+    <audio id="backMusic" src="sound/backgroundMusic.mp3" type="audio/mpeg"></audio>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>

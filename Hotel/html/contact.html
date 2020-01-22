@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Stylesheet -->
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mobile.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="nav">
+      <ul class="middle">
+        <h5 class="left">The Stratford Hotel</h5>
+        <li class="right">
+          <div class="button-nav">
+            <a href="../html/contact.html">
+              Contact Us
+            </a>
+          </div>
+        </li>
+        <li class="right"><a href="../html/about.html">About Stratford</a></li>
+        <li class="right"><a href="../html/rooms.html">Rooms</a></li>
+        <li class="right"><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+
+    <div class="wrapper-contact">
+      <div class="book-online-contain">
+        <h1>Contact Us</h1>
+        <p>107 Erie St, Stratford, ON N5A 2M5</p>
+        <p>1-888-250-4007</p>
+        <p>(519) 273-3666</p>
+        <a href="mailto: info@stratfordhotel.on.ca"
+          >info@stratfordhotel.on.ca</a
+        >
+        <br />
+        <br />
+        <a class="imgLinks" href="https://www.facebook.com/TheStratfordHotel">
+          <img
+            class="footerlogos"
+            src="../images/fblogo.png"
+            alt="A picture of the facebook logo"
+          />
+        </a>
+        <a
+          class="imgLinks"
+          href="https://www.tripadvisor.ca/Hotel_Review-g155015-d1645482-Reviews-The_Stratford_Hotel-Stratford_Ontario.html"
+        >
+          <img
+            class="footerlogos"
+            src="../images/tripadvisor.png"
+            alt="A picture of the tripadvisor logo"
+          />
+        </a>
+
+        <p>we are not wheelchair accessible</p>
+      </div>
+
+      <!-- Form -->
+
+      <div class="book-online-contain">
+          <h1>Book Online</h1>
+          <p>
+            Book your stay with us below, filling out the required information
+          </p>
+        </div>
+        <div class="row">
+          <div class="form-outline">
+            <form>
+                <div class="row">
+                    <div class="col-50">
+                    <p>First Name</p>
+                    <br />
+                    <input type="text" name="firstname" required /><br />
+                    <p>Last Name</p>
+                    <br />
+                    <input type="text" name="lastname" required /><br />
+                    <p>Email</p>
+                    <br />
+                    <input type="email" name="email" required /><br />
+                    <p>Phone Number</p>
+                    <br />
+                    <input type="tel" name="phonenumber" required /><br />
+                    </div>
+                    <div class="col-50">
+                    <p style="color:#606060;">Dates of Stay</p>
+                    <br />
+                    <p>From</p>
+                    <input type="date" name="datestart" required />
+                    <p>Till</p>
+                    <input type="date" name="dateend" required />
+                    <p>Suite Number</p>
+                    <select name="roomtype" required>
+                        <option value="" selected hidden>#</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option> </select
+                    ><br />
+                    <br />
+                    <input
+                        type="submit"
+                        class="button"
+                        value="Confirm Booking"
+                        onsubmit="alert('Booking Confirmed')"
+                    />
+                    <p class="warning-contact">
+                        If you do have to cancel your reservation we do require 10
+                        days prior to your arrival to receive a full refund of your
+                        deposit. All cancellations are subject to a $25.00 fee. No
+                        refunds on Winter/Spring / Fall rate deals refunds are only
+                        given in the summer months.
+                    </p>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <section id="footer">
+      <div id="ft1">
+        <h1>The Stratford Hotel</h1>
+        <p>
+          World class dining, fantastic shopping, galleries, beautiful parks,
+          the calming Avon River, and unforgettable Theater all minutes from our
+          front door. Welcome to Stratford.
+        </p>
+        <h3>Privacy Policy | Terms and Conditions</h3>
+      </div>
+
+      <div id="ft2">
+        <div class="footer-col">
+          <a href="../index.html">Home</a>
+          <a href="../html/about.html">About Stratford</a>
+        </div>
+        <div class="footer-col">
+          <a href="../html/rooms.html">Rooms</a>
+          <a href="../html/contact.html">Contact Us</a>
+        </div>
+      </div>
+
+      <div id="ft3">
+        <a href="https://www.facebook.com/TheStratfordHotel">
+          <img
+            class="footerlogos"
+            src="../images/fblogo.png"
+            alt="A picture of the facebook logo"
+          />
+        </a>
+        <a
+          href="https://www.tripadvisor.ca/Hotel_Review-g155015-d1645482-Reviews-The_Stratford_Hotel-Stratford_Ontario.html"
+        >
+          <img
+            class="footerlogos"
+            src="../images/tripadvisor.png"
+            alt="A picture of the tripadvisor logo"
+          />
+        </a>
+
+        <h2>1-888-250-4007</h2>
+
+        <h2>519-273-3666</h2>
+
+        <h2>info@stratfordhotel.on.ca</h2>
+
+        <h3>
+          Copyright &#x24B8; 2019 Stratford Hotel. <br />
+          All rights reserved. <br />
+          Web Design by GBDA 228
+        </h3>
+      </div>
+    </section>
+  </body>
+</html>
